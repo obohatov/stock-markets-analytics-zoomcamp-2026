@@ -1,42 +1,42 @@
-# Модуль 1: Introduction and Data Sources
+# Module 1: Introduction and Data Sources
 
-## Теория (кратко)
+## Theory (brief)
 
-- **Data-driven инвестиции**: гипотезы проверяются на данных; баланс риск/доходность.
-- **Два типа данных**: макро (FRED) vs рыночные (Yahoo Finance / `yfinance`).
-- **OHLCV** и особая роль **Adjusted Close** (скорректирован на дивиденды и сплиты).
-- **Макро-индикаторы**: ВВП (`GDPC1`), ставки `DGS2`/`DGS10`, инверсия кривой доходности как сигнал рецессии.
-- **Доходность**: рост за период, CAGR, дивидендная доходность.
-- **Сетап**: Colab + `yfinance` + `pandas_datareader`; принципы выбора API (покрытие, частота, лимиты, free vs paid).
+- **Data-driven investing**: hypotheses tested on data; risk/reward trade-off.
+- **Two data types**: macro (FRED) vs market (Yahoo Finance / `yfinance`).
+- **OHLCV** and the special role of **Adjusted Close** (adjusted for dividends and splits).
+- **Macro indicators**: GDP (`GDPC1`), rates `DGS2`/`DGS10`, inverted yield curve as a recession signal.
+- **Returns**: period growth, CAGR, dividend yield.
+- **Setup**: Colab + `yfinance` + `pandas_datareader`; API selection principles (coverage, frequency, rate limits, free vs paid).
 
-## Домашнее задание — 7 вопросов
+## Homework — 7 questions
 
-Числовые ответы (идут в leaderboard):
+Numeric answers (submitted to the leaderboard):
 
-1. **[Macro] Средний рост ВВП в 2023.** `GDPC1` с FRED → YoY-рост (сдвиг на 4 квартала) → среднее по 4 кварталам 2023, округлить до 1 знака.
-2. **[Macro] Инверсия кривой доходности.** `DGS10 − DGS2` с 2000-01-01 → минимальное значение разницы, округлить до 1 знака.
-3. **[Index] Какой индекс лучше.** S&P 500 (`^GSPC`) vs IPC Mexico (`^MXX`), рост за 5 лет → больший % (целое число).
-4. **[Stocks OHLCV] 52-week range ratio (2023).** Топ-6 акций → `(max − min) / max` по Adj Close за 2023 → наибольший, округлить до 2 знаков.
-5. **[Stocks] Дивидендная доходность.** Те же 6 компаний → сумма дивидендов 2023 / Adj Close последнего дня → наибольший %, округлить до 1 знака.
+1. **[Macro] Average GDP growth in 2023.** `GDPC1` from FRED -> YoY growth (shift by 4 quarters) -> average of the 4 quarters of 2023, rounded to 1 decimal.
+2. **[Macro] Inverse yield curve.** `DGS10 - DGS2` since 2000-01-01 -> minimum value of the spread, rounded to 1 decimal.
+3. **[Index] Which index is better.** S&P 500 (`^GSPC`) vs IPC Mexico (`^MXX`), 5-year growth -> larger value in % (nearest integer).
+4. **[Stocks OHLCV] 52-week range ratio (2023).** Top-6 stocks -> `(max - min) / max` of Adj Close over 2023 -> largest, rounded to 2 decimals.
+5. **[Stocks] Dividend yield.** Same 6 companies -> sum of 2023 dividends / Adj Close on the last trading day -> largest %, rounded to 1 decimal.
 
-Свободный текст:
+Free text:
 
-6. **[Exploratory] Новые метрики.** Найти и описать доп. показатели/ряды, полезные для проекта.
-7. **[Exploratory] Стратегия вокруг отчётностей.** Описать идею отбора компаний по данным о будущих earnings.
+6. **[Exploratory] New metrics.** Find and describe additional metrics / time series useful for the project.
+7. **[Exploratory] Earnings-driven strategy.** Describe an idea for selecting companies based on upcoming earnings data.
 
-> ⚠️ Диапазоны дат/годы могут слегка отличаться в версии когорты 2026 — сверить с
-> папкой `cohorts/2026` в репозитории курса, когда она будет опубликована.
+> Note: date ranges / years may differ slightly in the 2026 cohort version —
+> cross-check against the `cohorts/2026` folder in the course repo once published.
 
-## Прогресс
+## Progress
 
-- [x] Q1 — средний рост ВВП 2023
-- [ ] Q2 — инверсия кривой доходности
-- [ ] Q3 — сравнение индексов
+- [x] Q1 — average GDP growth 2023
+- [ ] Q2 — inverse yield curve
+- [ ] Q3 — index comparison
 - [ ] Q4 — 52-week range ratio
-- [ ] Q5 — дивидендная доходность
-- [ ] Q6 — новые метрики (текст)
-- [ ] Q7 — стратегия вокруг earnings (текст)
+- [ ] Q5 — dividend yield
+- [ ] Q6 — new metrics (text)
+- [ ] Q7 — earnings strategy (text)
 
-## Файлы
+## Files
 
-- [`homework_1.ipynb`](homework_1.ipynb) — рабочий ноутбук с решениями
+- [`homework_1.ipynb`](homework_1.ipynb) — working notebook with solutions
