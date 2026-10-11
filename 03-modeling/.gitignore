@@ -1,0 +1,6 @@
+# Course dataset: downloaded at runtime, too large for GitHub
+*.parquet
+*.parquet.brotli
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
