@@ -1,0 +1,6 @@
+# Course dataset (downloaded by the notebook or reused from 03-modeling)
+*.parquet
+*.parquet.brotli
+
+# Jupyter
+.ipynb_checkpoints/
